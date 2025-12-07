@@ -1,0 +1,282 @@
+@charset "utf-8";
+
+/* common */
+
+body {
+  margin: 0;
+}
+
+.section-title {
+  font-size: 32px;
+  font-weight: bold;
+  color: #383E45;
+  margin-bottom: 60px;
+  display: block;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  border-bottom: 1px solid #383E45;
+}
+
+.medium-heading {
+  font-size: 16px;
+  font-weight: bold;
+  color: #383E45;
+  margin-bottom: 20px;
+}
+
+.inner {
+  max-width: 960px;
+  padding: 0 4%;
+  margin: 0 auto;
+}
+
+.article {
+  font-size: 14.4px;
+  line-height: 1.8;
+  color: #383E45;
+  margin-bottom: 40px;
+  max-width: 500px;
+}
+
+.bicycle-desc,
+.bicycle-title {
+  color:#383E45;
+  line-height: 1.8;
+}
+
+.bicycle-title {
+  font-weight: bold;
+}
+
+.bicycle-desc {
+  font-size: 16px;
+}
+
+/* header */
+
+.site-header {
+  width: 100%;
+  padding: 20px 0;
+}
+
+.site-header .inner {
+  max-width: 960px;
+  padding: 0 4%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.site-header h1 {
+  margin: 0;
+  font-size: 0;
+}
+
+.site-header nav ul {
+  display: flex;
+  gap: 32px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.site-header nav a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* main area */
+
+main {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 4%;
+}
+
+.mainvisual img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+}
+
+/* About */
+
+.about {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.about .section-title {
+  margin-top: 70px;
+  margin-bottom: 80px;
+}
+
+.about img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.profile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  margin-top: 60px;
+}
+
+.profile-text {
+  text-align: left;
+}
+
+/* Bicycle */
+
+.bicycle {
+  padding: 100px 0;
+}
+
+.bicycle .section-title {
+  margin-top: 60px;
+  margin-bottom: 100px;
+}
+
+.bicycle-list {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.bicycle-item {
+  width: 30%;
+}
+
+.bicycle-item img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+}
+
+.bicycle-title {
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+/* footer */
+
+.site-footer {
+  text-align: center;
+  font-size: 10px;
+  color: #383E45;
+  padding: 40px 0;
+}
+
+
+
+   /* SP（600px以下） */
+
+
+@media (max-width: 600px) {
+
+  /* common */
+
+  .inner {
+    padding: 0 6%;
+  }
+
+  .article {
+    font-size: 14px;
+    line-height: 1.8;
+  }
+
+  .section-title {
+    margin-top: 40px;
+    margin-bottom: 35px;
+  }
+
+  /* About */
+
+  .profile {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
+
+  .profile-text {
+    max-width: 100%;
+    text-align: left;
+  }
+
+  .medium-heading {
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    text-align: center;
+  }
+
+  /* Bicycle */
+
+  .bicycle-list {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .bicycle-item {
+    width: 100%;
+  }
+
+  .bicycle-item img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+  }
+
+}
+
+
+@media (max-width: 600px) {
+
+  /* mainvisual */
+
+  .mainvisual {
+    width: 375px;
+    height: 600px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .mainvisual img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: auto;
+    height: 100%;
+    max-width: none;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+  }
+
+  /* header */
+
+  .site-header .inner {
+    padding: 0 6%;
+  }
+
+  .site-header nav ul {
+    gap: 20px;
+  }
+
+  /* footer */
+
+  .site-footer {
+    font-size: 12px;
+    padding: 30px 0;
+    text-align: center;
+  }
+
+}
