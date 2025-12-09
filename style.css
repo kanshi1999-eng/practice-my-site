@@ -6,15 +6,20 @@ body {
   margin: 0;
 }
 
+p {
+  margin: 0;
+}
+
 .section-title {
+  margin: 0 auto 60px;
   font-size: 32px;
   font-weight: bold;
   color: #383E45;
-  margin-bottom: 60px;
+  /* margin-bottom: 60px; */
   display: block;
   width: fit-content;
-  margin-left: auto;
-  margin-right: auto;
+  /* margin-left: auto; */
+  /* margin-right: auto; */
   border-bottom: 1px solid #383E45;
 }
 
@@ -22,27 +27,27 @@ body {
   font-size: 16px;
   font-weight: bold;
   color: #383E45;
-  margin-bottom: 20px;
+  margin: 10px 0;
 }
 
 .inner {
   max-width: 960px;
   padding: 0 4%;
-  margin: 0 auto;
+  margin: 0 auto 100px;
 }
 
 .article {
   font-size: 14.4px;
-  line-height: 1.8;
+  line-height: 1.5;
   color: #383E45;
-  margin-bottom: 40px;
+  /* margin-bottom: 40px; */
   max-width: 500px;
 }
 
 .bicycle-desc,
 .bicycle-title {
   color:#383E45;
-  line-height: 1.8;
+  /* line-height: 1.8; */
 }
 
 .bicycle-title {
@@ -51,18 +56,19 @@ body {
 
 .bicycle-desc {
   font-size: 16px;
+  text-align: center;
 }
 
 /* header */
 
 .site-header {
   width: 100%;
-  padding: 20px 0;
+  padding: 10px 0;
 }
 
 .site-header .inner {
   max-width: 960px;
-  padding: 0 4%;
+  padding: 0 5.3%;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -85,6 +91,7 @@ body {
 .site-header nav a {
   text-decoration: none;
   color: inherit;
+  font-size: 0.9rem;
 }
 
 /* main area */
@@ -95,9 +102,13 @@ main {
   padding: 0 4%;
 }
 
+.mainvisual {
+  margin-bottom:80px;
+}
+
 .mainvisual img {
   width: 100%;
-  height: auto;
+  height: 600px;
   object-fit: cover;
   display: block;
 }
@@ -125,8 +136,8 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 40px;
-  margin-top: 60px;
+  gap: 30px;
+  /* margin-top: 60px; */
 }
 
 .profile-text {
@@ -135,28 +146,28 @@ main {
 
 /* Bicycle */
 
-.bicycle {
-  padding: 100px 0;
-}
+/* .bicycle {
+  /* padding: 100px 0; */
+} */
 
-.bicycle .section-title {
-  margin-top: 60px;
-  margin-bottom: 100px;
-}
+/* .bicycle .section-title {
+  /* margin-top: 60px; */
+  /* margin-bottom: 100px; */
+ } */
 
 .bicycle-list {
   display: flex;
   justify-content: space-between;
-  gap: 24px;
+  /* gap: 24px; */
 }
 
 .bicycle-item {
-  width: 30%;
+  width: 32%;
 }
 
 .bicycle-item img {
   width: 100%;
-  height: 200px;
+  height: auto;
   object-fit: cover;
   display: block;
 }
@@ -164,6 +175,7 @@ main {
 .bicycle-title {
   font-size: 16px;
   margin-top: 10px;
+  text-align: center;
 }
 
 /* footer */
@@ -172,7 +184,7 @@ main {
   text-align: center;
   font-size: 10px;
   color: #383E45;
-  padding: 40px 0;
+  /* padding: 40px 0; */
 }
 
 
